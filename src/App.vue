@@ -12,9 +12,43 @@ import TheFooter from './components/TheFooter.vue'
 import FloatingWhatsApp from './components/FloatingWhatsApp.vue'
 
 useHead({
-  title: 'Derbau | Ingeniería y Construcción',
+  title: 'Derbau | Ingeniería y Construcción Industrial en Santiago',
   meta: [
-    { name: 'description', content: 'Expertos en construcción industrial y corporativa.' }
+    {
+      name: 'description',
+      content: 'Empresa líder en construcción de oficinas, galpones industriales y cálculo estructural en Chile. Expertos en gestión de proyectos y cumplimiento normativo OGUC.'
+    },
+    {
+      name: 'keywords',
+      content: 'constructora santiago, ingeniería estructural, habilitación oficinas, construcción industrial, regularización obras, Derbau'
+    },
+    // Etiquetas Open Graph (Importantes para compartir en redes sociales como LinkedIn)
+    {
+      property: 'og:title',
+      content: 'Derbau | Excelencia Técnica en Construcción y Gestión de Proyectos'
+    },
+    {
+      property: 'og:description',
+      content: 'Soluciones integrales en construcción y gestión de proyectos para el sector corporativo e industrial.'
+    },
+    {
+      property: 'og:image',
+      content: 'https://www.derbau.cl/img/og-image.jpg' // Reemplazar con URL de la imagen (de 1200x630px)
+    },
+    {
+      name: 'robots',
+      content: 'index, follow' // Indica a los buscadores que rastreen la página
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://www.derbau.cl' // El dominio real
+    },
+    {
+      rel: 'icon',
+      href: '/favicon.ico'
+    }
   ]
 })
 </script>
