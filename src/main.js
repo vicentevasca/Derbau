@@ -1,21 +1,22 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import { createHead } from '@unhead/vue'
 
-// 1. Importar Analytics
-import VueGtag from "vue-gtag";
+// USAMOS LA LIBRERÍA ESTABLE
+import { createHead } from '@vueuse/head'
+
+// ANALYTICS COMPATIBLE
+import VueGtag from 'vue-gtag-next'
 
 const app = createApp(App)
 const head = createHead()
 
 app.use(head)
 
-// 2. Configurar Analytics
 app.use(VueGtag, {
-  config: { 
-    id: "G-M8S6C0DTRP" // <--- REEMPLAZA ESTO CON TU ID REAL DE GOOGLE
+  property: {
+    id: "G-M8S6C0DTRP" // Tu ID de Google aquí
   }
-});
+})
 
 app.mount('#app')

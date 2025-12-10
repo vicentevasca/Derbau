@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@tsparticles/vue3": "^3.0.1",
-    "@unhead/vue": "^2.0.19",
+    "@vueuse/head": "^2.0.0",
     "lucide-vue-next": "^0.556.0",
     "tsparticles-slim": "^2.12.0",
     "vue": "^3.5.24",
-    "vue-gtag": "^3.6.3"
+    "vue-gtag-next": "^1.14.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
